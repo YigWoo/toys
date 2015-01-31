@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+    <bean id="helper" class="com.yichao.woo.spring.di.method.lookup.MyHelper" scope="prototype"/>
+
+    <!-- 这里的 getHelper 方法每次都能够拿到一个新的 helper object -->
+    <bean id="absLookupDemoBean" class="com.yichao.woo.spring.di.method.lookup.AbsLookupDemoBean">
+        <lookup-method name="getHelper" bean="helper"/>
+    </bean>
+
+    <!-- 这里的 myHelper 是一个单例的 bean，虽然 helper 是 prototype -->
+    <!-- 但是由于 stdLookupDemoBean 是一个单例，在初始化完后就不变了 -->
+    <!-- 因此，myHelper 也跟着不变了 -->
+    <bean class="com.yichao.woo.spring.di.method.lookup.StdLookupDemoBean" id="stdLookupDemoBean">
+        <property name="myHelper" ref="helper"/>
+    </bean>
+
+</beans>
