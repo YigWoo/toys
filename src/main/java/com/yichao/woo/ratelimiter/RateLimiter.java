@@ -24,7 +24,6 @@ public class RateLimiter {
         intervalInMills = 10000;
         limit = 3;
         intervalPerPermit = intervalInMills * 1.0 / limit;
-        System.out.println(intervalPerPermit);
     }
 
     // 单线程操作下才能保证正确性
