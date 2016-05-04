@@ -1,4 +1,4 @@
-package com.yichao.woo.ratelimiter;
+package com.yichao.woo.ratelimiter.v1;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
