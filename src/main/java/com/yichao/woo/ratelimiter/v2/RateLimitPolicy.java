@@ -22,7 +22,7 @@ public abstract class RateLimitPolicy {
         this.capacity = capacity;
         this.intervalInMills = intervalInMills;
         intervalPerPermit = intervalInMills / capacity;
-        maxBurstTokens = maxBurstTime/intervalPerPermit;
+        maxBurstTokens = Math.min(maxBurstTime/intervalPerPermit, capacity);
     }
 
     public abstract String genBucketKey(String identity);
