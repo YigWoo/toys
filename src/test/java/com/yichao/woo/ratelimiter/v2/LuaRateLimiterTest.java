@@ -19,7 +19,7 @@ public class LuaRateLimiterTest {
     @Before
     public void setUp() throws Exception {
         // assume working directory when running is project root
-        jedisPool = new JedisPool("192.168.70.3", 6379);
+        jedisPool = new JedisPool("127.0.0.1", 6379);
         policy = new PerUserRateLimitPolicy(10, 20000, 10000);
         LuaRateLimiter.Builder builder = new LuaRateLimiter.Builder("rate_limiter.lua");
         sut = builder.newLuaRateLimiter(policy);

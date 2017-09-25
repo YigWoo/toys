@@ -14,12 +14,20 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 public final class LuaRateLimiter {
-    private JedisPool       jedisPool;
-    private String          scriptSha1;
+    private JedisPool jedisPool;
+
+    private String scriptSha1;
+
     private RateLimitPolicy policy;
 
     private LuaRateLimiter() {
         jedisPool = new JedisPool("192.168.70.3", 6379);
+    }
+
+    static String read(String luaScriptPath) throws IOException {
+        Path path = Paths.get(luaScriptPath);
+        byte[] scriptBytes = Files.readAllBytes(path);
+        return new String(scriptBytes);
     }
 
     public final boolean access(final String identity) {
@@ -39,12 +47,6 @@ public final class LuaRateLimiter {
 
             return result == 1L;
         }
-    }
-
-    static String read(String luaScriptPath) throws IOException {
-        Path path = Paths.get(luaScriptPath);
-        byte[] scriptBytes = Files.readAllBytes(path);
-        return new String(scriptBytes);
     }
 
     public static class Builder {

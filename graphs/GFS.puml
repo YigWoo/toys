@@ -1,0 +1,26 @@
+@startuml
+[Client] -right-> [GFS Master]: metadata like chunk location, file name
+[GFS Master] ..> [Client]: 返回 chunk handle, chunk location
+
+[Client] --> [GFS Chunkserver 1]: handle
+[GFS Chunkserver 1] --> [Client]: chunk data
+
+[GFS Master] --> [GFS Chunkserver 1]
+[GFS Master] --> [GFS Chunkserver 2]
+[GFS Master] --> [GFS Chunkserver n]
+
+[GFS Chunkserver 1] ..> [1's primary]
+[GFS Chunkserver 1] ..> [1's replica]
+cloud "GFS Chunkserver 1" {
+}
+
+[GFS Chunkserver 2] ..> [2's primary]
+[GFS Chunkserver 2] ..> [2's replica]
+cloud "GFS Chunkserver 2" {
+}
+
+[GFS Chunkserver n] ..> [n's primary]
+[GFS Chunkserver n] ..> [n's replica]
+cloud "GFS Chunkserver n" {
+}
+@enduml
