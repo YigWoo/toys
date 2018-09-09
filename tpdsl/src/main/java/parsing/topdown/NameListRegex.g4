@@ -1,4 +1,4 @@
-grammar NameList;
+grammar NameListRegex;
 
 // String list = "\\["+elements+"\\]";
 list     : '[' elements ']' ;        // match bracketed list
