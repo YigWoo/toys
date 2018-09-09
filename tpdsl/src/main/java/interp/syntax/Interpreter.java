@@ -86,7 +86,9 @@ public class Interpreter {
             ResultSet rs = (ResultSet)o;
             for (List<Object> r : rs.results) {
                 for (int i = 0; i<r.size(); i++) {
-                    if ( i>0 ) System.out.print(", ");
+                    if ( i>0 ) {
+                        System.out.print(", ");
+                    }
                     System.out.print(r.get(i));
                 }
                 System.out.println();
