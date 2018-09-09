@@ -25,6 +25,7 @@ public final class DiscardClient {
         // Configure SSL.
         final SslContext sslCtx;
         if (SSL) {
+            //noinspection deprecation
             sslCtx = SslContext.newClientContext(InsecureTrustManagerFactory.INSTANCE);
         } else {
             sslCtx = null;

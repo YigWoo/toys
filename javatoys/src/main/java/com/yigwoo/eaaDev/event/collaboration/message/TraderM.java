@@ -1,7 +1,5 @@
 package com.yigwoo.eaaDev.event.collaboration.message;
 
-import com.yichao.woo.eaaDev.event.collaboration.command.Order;
-import com.yichao.woo.eaaDev.event.collaboration.command.ServiceLocator;
 import com.yigwoo.eaaDev.event.collaboration.command.Order;
 import com.yigwoo.eaaDev.event.collaboration.command.ServiceLocator;
 

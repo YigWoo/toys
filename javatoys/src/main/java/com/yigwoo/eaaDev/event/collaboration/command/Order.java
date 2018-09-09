@@ -1,6 +1,6 @@
 package com.yigwoo.eaaDev.event.collaboration.command;
 
-import com.yichao.woo.eaaDev.event.collaboration.message.TraderM;
+import com.yigwoo.eaaDev.event.collaboration.message.TraderM;
 import lombok.Data;
 
 import java.util.Objects;

@@ -1,8 +1,7 @@
 package com.yigwoo.eaaDev.event.collaboration.message;
 
-import com.yichao.woo.eaaDev.event.collaboration.command.ServiceLocator;
-import com.yichao.woo.eaaDev.event.collaboration.command.StockExchange;
-import com.yichao.woo.eaaDev.event.collaboration.command.Trader;
+import com.yigwoo.eaaDev.event.collaboration.command.ServiceLocator;
+import com.yigwoo.eaaDev.event.collaboration.command.StockExchange;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
