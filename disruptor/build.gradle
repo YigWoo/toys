@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'com.yigwoo'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.lmax', name: 'disruptor', version: '3.4.2'
+
+}
