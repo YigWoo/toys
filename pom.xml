@@ -103,11 +103,6 @@
             <version>2.6.1</version>
         </dependency>
         <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-example</artifactId>
-            <version>4.0.29.Final</version>
-        </dependency>
-        <dependency>
             <groupId>org.openid4java</groupId>
             <artifactId>openid4java</artifactId>
             <version>1.0.0</version>
@@ -142,5 +137,31 @@
             <artifactId>fluent-hc</artifactId>
             <version>4.5.3</version>
         </dependency>
+        <dependency>
+            <groupId>org.jbpm.jbpm4</groupId>
+            <artifactId>jbpm-pvm</artifactId>
+            <version>4.2</version>
+        </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>jboss-maven2-release-repository</id>
+            <name>jboss</name>
+            <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>maven</id>
+            <name>mvn</name>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+        <repository>
+            <id>jboss-third</id>
+            <name>jboss third party</name>
+            <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases/</url>
+        </repository>
+
+    </repositories>
+
+
 </project>

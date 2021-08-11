@@ -10,7 +10,8 @@ import io.netty.channel.socket.oio.OioServerSocketChannel;
 
 import java.net.InetSocketAddress;
 
-public class EchoServer {
+public class
+EchoServer {
     private final int port;
 
     public EchoServer(int port) {

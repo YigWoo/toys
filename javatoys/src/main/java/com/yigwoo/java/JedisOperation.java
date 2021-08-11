@@ -14,6 +14,7 @@ abstract class JedisOperation<T> {
 
     T doOp() {
         try (Jedis jedis = jedisPool.getResource()) {
+            System.out.println("1");
             return jedisOp(jedis);
         }
     }
