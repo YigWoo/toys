@@ -1,0 +1,20 @@
+name,ring,quadrant,isNew,description
+事件网关 & 智催平台需求,重要 & 紧急,经营活动引擎,TRUE,支持智催平台的同时，能够构建经营活动引擎的能力
+分片加速方案产品化,重要 & 不紧急,经营活动引擎,TRUE,将经营活动的整体的跑批方案进行优化，不需要产品和研发提分片的请求变更，最好能够是自适应的方案
+前后端画布的数据结构配置,重要 & 不紧急,经营活动引擎,TRUE,梳理经营活动引擎结构，确认数据结构是否合理（属于经营活动引擎的放 campaignconf，不属于的放其他领域，campaignconf 只保存产品号）
+经营活动引擎整体的无人值守的方案,重要 & 不紧急,经营活动引擎,TRUE,无人值守三件套：监控、告警、指标，以及发布大盘
+经营活动引擎数据架构梳理,重要 & 不紧急,经营活动引擎,TRUE,解答一个问题：为什么经营活动引擎跑批会存大量的数据
+事件网关支持,重要 & 紧急,BizFlow,TRUE,强化 bizflow 新框架能力
+新框架运营，不断增加使用新框架的灰度开放,重要 & 不紧急,BizFlow,TRUE,持续对于新框架进行运营
+新框架的优化,重要 & 不紧急,BizFlow,TRUE,规划新框架后续的优化内容，争取将之前不合理的内容继续优化
+BizFlow 的无人值守方案,重要 & 不紧急,BizFlow,TRUE,无人值守三件套：监控、告警、指标，以及发布大盘
+BizFlow 相关的 confplus 使用优化,重要 & 不紧急,BizFlow,TRUE,优化 BizFlow 的 confplus 使用，防止出现重大事故
+决策平台管理端需求,重要 & 不紧急,决策平台 & SL,TRUE,支持决策平台的管理功能
+所有 Sparkling 使用应用迁移 getToken 新架构,重要 & 不紧急,决策平台 & SL,TRUE,防止 getToken 出现问题，继续跟进
+SparklingLogic 规范系统化,重要 & 紧急,决策平台 & SL,TRUE,支持 SparklingLogic 的规划做到产品系统内，以便于后续大数据的数据分析
+风控迁移 SparklingLogic & 经营活动引擎 1.5,重要 & 紧急,决策平台 & SL,TRUE,专项支持
+SparklingLogic 整体架构梳理,重要 & 不紧急,决策平台 & SL,TRUE,继续梳理 SparklingLogic 的架构，确认是否有架构缺陷，防备重大的事故产生
+flink jar 包、mirrormodel 等应用组件迁移 BCDS,不重要 & 紧急,其他,TRUE,迁移 BCDS 支持
+decisionlog 使用的 RocketMQ 迁移 kafka,不重要 & 紧急,其他,TRUE,RocketMQ 迁移支持
+变量管理的规划,重要 & 不紧急,其他,TRUE,规划变量管理功能，作为决策平台、经营活动引擎 & bizflow 的底层支撑组件
+增加系统整体的单元测试覆盖率 & 测试 case 数量,重要 & 不紧急,其他,TRUE,增加系统质量
