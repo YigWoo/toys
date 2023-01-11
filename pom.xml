@@ -103,11 +103,6 @@
             <version>2.6.1</version>
         </dependency>
         <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-example</artifactId>
-            <version>4.0.29.Final</version>
-        </dependency>
-        <dependency>
             <groupId>org.openid4java</groupId>
             <artifactId>openid4java</artifactId>
             <version>1.0.0</version>
