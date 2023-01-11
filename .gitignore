@@ -1,3 +1,5 @@
+*.DS_Store
+
 ### Maven template
 target/
 pom.xml.tag
@@ -87,3 +89,12 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
+gen/
+
+*.classpath
+*.project
+/javatoys/.factorypath
+*.prefs
+
+# Antlr
+*.tokens
