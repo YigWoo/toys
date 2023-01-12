@@ -6,11 +6,6 @@ parser grammar CSharpParser;
 
 options { tokenVocab=CSharpLexer; superClass = CSharpParserBase; }
 
-// entry point
-compilation_unit
-	: BYTE_ORDER_MARK? extern_alias_directives? using_directives?
-	  global_attribute_section* namespace_member_declarations? EOF
-	;
 
 //B.2 Syntactic grammar
 
