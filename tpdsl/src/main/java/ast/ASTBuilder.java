@@ -40,8 +40,8 @@ public class ASTBuilder extends VecMathBaseVisitor<ExprNode> {
             default:
                 throw new RuntimeException("Operation Not Supported");
         }
-        visit(ctx.left);
-        visit(ctx.right);
+        node.setLeft(visit(ctx.left));
+        node.setRight(visit(ctx.right));
         return node;
     }
 
